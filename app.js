@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // db: "MMSDB"
 
 app.use('/api', require('./routes/index'));
-
+console.log("app.js");
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
